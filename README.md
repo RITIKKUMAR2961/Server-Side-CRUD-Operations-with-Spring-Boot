@@ -55,29 +55,34 @@ Ensure you have the following installed:
 
 ---
 
-### 📥 Installation
+### 📥 Steps for using This Project
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/your-repo/student-api.git
    cd student-api
 
+2. **Build the project**  
+   ```bash
+    mvn clean install
 
-Build the project
- -------   mvn clean install
+3. **Run the Spring Boot Application**  
+   ```bash
+    mvn spring-boot:run
+
+ 4 **The API will be available at:**  
+   ```bash
+    http://localhost:8080/students
  
-Run the Spring Boot Application
------------mvn spring-boot:run
 
-The API will be available at:
------------http://localhost:8080/students
 
 📡 API Endpoints
 
-Method	                Endpoint	                           Description
+| Method  | Endpoint                  | Description             |
+|---------|---------------------------|-------------------------|
+| GET     | `/students`                | Welcome message         |
+| POST    | `/students/add`            | Add a new student       |
+| GET     | `/students/all`            | Get all student records |
+| GET     | `/students/{id}`           | Get student by ID       |
+| PUT     | `/students/update/{id}`    | Update student by ID    |
+| DELETE  | `/students/delete/{id}`    | Delete student by ID    |
 
-GET	                  /students	                           Welcome message
-POST	                /students/add	                      Add a new student
-GET	                  /students/all	                      Get all student records
-GET	                  /students/{id}	                    Get student by ID
-PUT	                  /students/update/{id}	              Update student by ID
-DELETE	              /students/delete/{id}	              Delete student by ID
