@@ -35,7 +35,7 @@ This is a **CRUD (Create, Read, Update, Delete) API** for managing student data 
 - Add new students
 - Retrieve all students or a specific student by ID
 - Update student details
-- Delete a student record
+- Delete a student records
 
 ## 🛠️ Tech Stack
 - Java 17
